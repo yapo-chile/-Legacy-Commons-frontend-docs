@@ -1,0 +1,18 @@
+{
+  "name": "frontend-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "docs for yapo frontend team",
+  "author": "Gabriel Vial <gabriel.vial@adevinta.com>",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "vuepress": "^1.2.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.0.0-rc.1"
+  }
+}
