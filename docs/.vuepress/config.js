@@ -13,11 +13,11 @@ module.exports = {
         link: '/basic/'
       },
       {
-        text: 'Contact',
+        text: 'Links',
         items: [
           {
             text: 'docs repo',
-            link: 'https://www.twitter.com/',
+            link: 'https://github.mpi-internal.com/Yapo/frontend-docs',
             target:'_blank'
           },
           {
