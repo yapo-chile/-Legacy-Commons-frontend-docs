@@ -21,6 +21,7 @@ Everything you need to know will be here.
 - [ ] Felipe Egas
 - [ ] Miguel Mora
 - [ ] Sebastián Altamirano
+- [ ] Fernanda Cancino
 - [ ] Fabián Urbina
 - [ ] Gabriel Vial
 
@@ -74,6 +75,7 @@ Everything you need to know will be here.
     - [ ] Listing
 - [ ] Blocket
   - [ ] Templates
+  - [ ] Bconfs
   - [ ] JS
   - [ ] CSS
 - [ ] Widgets
