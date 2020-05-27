@@ -26,8 +26,11 @@ Everything you need to know will be here.
 
 ### interesting slack channels
 - [ ] #yapo-front
+- [ ] #yapo-devs
+- [ ] #yapo-releases
+- [ ] #yapo-releases-info
+- [ ] #yapo-ops
 - [ ] #gaming-yapo
-- [ ] ?
 
 ### Practices
 - [ ] functional programming
