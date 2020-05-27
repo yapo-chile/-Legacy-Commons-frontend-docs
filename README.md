@@ -31,6 +31,7 @@ Everything you need to know will be here.
 - [ ] #yapo-releases-info
 - [ ] #yapo-ops
 - [ ] #gaming-yapo
+- [ ] #yapo_ambientes_dev_info
 
 ### Practices
 - [ ] functional programming
