@@ -86,6 +86,9 @@ Everything you need to know will be here.
   - [ ] altiro
   - [ ] yapo-legacy-fe
 - [ ] Experiments
+- [ ] Tagging
+  - [ ] Tealium
+  - [ ] Pulse
 
 ## Development
 
