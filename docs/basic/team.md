@@ -16,6 +16,11 @@ I started working at Yapo in March 2020. I like to define myself as a person pas
 
 ## Gabriel Vial
 
+I'm Gabriel, also knowed as gabito, father of twins, amateur csgo & valorant player, yapo team member since March '20.
+I'm Tauro, love obscene food (like an hamburger amazingly big with so many things inside), also thai and japan foods are my favorites (spicyyyyy 🌶).
+I love TI world, my main professional goal is keep growing to the devops/arquitecture layer and keep growing always ✨.
+My fav music genre is math-core (something a little bit weird for 99% of people).
+
 ## Cristóbal Díaz Álvarez
 
 Software engineer specialized in software development with web technologies. In yapo I am a FrontEnd Developer, but I have experience other tasks of software development, in other companies such as Fullstack Senior Developer, with frameworks/tools that use JS/TS like Node, Angular, AngularJS, React, Bootstrap, Loopback , etc. Born in 1991 in Santiago de Chile, art lover like photography, music, illustration/painting, cinema, and nature. I do not play musical instruments.
