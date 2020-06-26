@@ -12,17 +12,15 @@ Everything you need to know will be here.
 
 ## Documentation
 
-### Team presentation
+### Team
 
 - [ ] Team rules *
 ---
 - [ ] Claudio Donoso
 - [ ] Renato Hormazabal
-- [ ] Felipe Egas
-- [ ] Miguel Mora
 - [ ] Sebastián Altamirano
 - [ ] Fernanda Cancino
-- [ ] Fabián Urbina
+- [X] Fabián Urbina
 - [ ] Gabriel Vial
 
 ### interesting slack channels
