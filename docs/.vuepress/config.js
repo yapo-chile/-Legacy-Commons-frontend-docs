@@ -34,16 +34,17 @@ module.exports = {
           '/basic/',
           '/basic/team'
         ],
+        plugins: ['@vuepress/active-header-links'],
       },
       '/es/': {
         nav: [
           {
             text: 'Inicio',
-            link: '/'
+            link: '/es/'
           },
           {
             text: 'Empezar',
-            link: 'basic/'
+            link: '/es/basic/'
           },
           {
             text: 'Links',
@@ -62,45 +63,16 @@ module.exports = {
           },
         ],
         sidebar: [
-          '/basic/',
-          '/basic/team'
+          '/es/basic/',
+          '/es/basic/team'
         ],
+        plugins: ['@vuepress/active-header-links'],
       },
     },
-    // nav: [
-    //   {
-    //     text: 'Home',
-    //     link: '/'
-    //   },
-    //   {
-    //     text: 'Get started',
-    //     link: '/basic/'
-    //   },
-    //   {
-    //     text: 'Links',
-    //     items: [
-    //       {
-    //         text: 'docs repo',
-    //         link: 'https://github.mpi-internal.com/Yapo/frontend-docs',
-    //         target:'_blank'
-    //       },
-    //       {
-    //         text: 'docs vuepress',
-    //         link: 'https://vuepress.vuejs.org/',
-    //         target:'_blank'
-    //       }
-    //     ]
-    //   },
-    // ],
-    // sidebar: [
-    //   '/basic/',
-    //   '/basic/team'
-    // ],
     head: [
       ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png"}],
       ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ],
-    plugins: ['@vuepress/active-header-links']
   },
   locales: {
     '/': {
