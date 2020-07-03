@@ -49,6 +49,22 @@ ssh-keygen -t rsa -b 4096 -C <yourname@adevinta.com>
 ssh-add ~/.ssh/id_rsa
 ```
 
+To check if there is an SSH key created, you can run in the terminal
+
+``` bash
+ls -al ~/.ssh
+```
+
+To know how is the SSH key, you can run in the terminal
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+### Tips
+- When creating the SSH key from the terminal will request a password, it is advisable not to put any password in the future and in the use of this, do not put the password at every moment.
+- When the SSH key is created, it is added - with the second command provided in the first point - to the SSH-Agent, allowing us to remember each of the user's private keys for the duration of the session, so that the user is in charge of performing the authentication. 
+
+
 ## Clone [ADV cli](https://github.mpi-internal.com/cli/adv/)
 ``` bash
 git clone git@github.mpi-internal.com:cli/adv.git
