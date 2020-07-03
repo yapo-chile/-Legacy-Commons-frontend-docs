@@ -55,7 +55,7 @@ Para revisar si existe una clave SSH creada, puedes ejecutar en el terminal
 ls -al ~/.ssh
 ```
 
-Para saber cual es la clave SSH generada
+Para saber cual es la clave SSH generada, puedes ejecutar en el terminal
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
