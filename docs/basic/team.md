@@ -16,3 +16,5 @@ I started working at Yapo in March 2020. I like to define myself as a person pas
 
 ## Gabriel Vial
 
+## Cristóbal Díaz Álvarez
+
