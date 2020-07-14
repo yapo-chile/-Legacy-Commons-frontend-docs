@@ -18,3 +18,4 @@ I started working at Yapo in March 2020. I like to define myself as a person pas
 
 ## Cristóbal Díaz Álvarez
 
+Ingeniero en informática especializado en desarrollo de software orientado a tecnologías web. En yapo tengo el rol de Desarrollador FrontEnd, pero tengo experiencia en todas las partes del desarrollo de software, en otras empresas como Desarrollador Fullstack Senior, con frameworks basados en JS/TS como Node, Angular, React, Bootstrap, etc. Nacido en 1991 en Santiago de Chile, amante de las artes y la naturaleza.
