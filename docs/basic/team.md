@@ -18,4 +18,4 @@ I started working at Yapo in March 2020. I like to define myself as a person pas
 
 ## Cristóbal Díaz Álvarez
 
-Software Engineer especialized as Web Developer in technologies based on JS/TS. Frontend Developer at Yapo.
+Software Engineer especialized as Web Developer in technologies based on JS/TS. Frontend Developer at Yapo. I do not play any instrument but I love to listenting music.
