@@ -18,4 +18,4 @@ I started working at Yapo in March 2020. I like to define myself as a person pas
 
 ## Cristóbal Díaz Álvarez
 
-Software Engineer especialized as Web Developer in technologies based on JS/TS. Frontend Developer at Yapo. I do not play any instrument but I love to listenting music.
+Software engineer specialized in software development with web technologies. In yapo I am a FrontEnd Developer, but I have experience other tasks of software development, in other companies such as Fullstack Senior Developer, with frameworks/tools that use JS/TS like Node, Angular, AngularJS, React, Bootstrap, Loopback , etc. Born in 1991 in Santiago de Chile, art lover like photography, music, illustration/painting, cinema, and nature. I do not play musical instruments.
