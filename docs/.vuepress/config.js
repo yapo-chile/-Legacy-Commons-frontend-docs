@@ -15,6 +15,10 @@ module.exports = {
             link: '/basic/'
           },
           {
+            text: 'Stack',
+            link: '/stack/'
+          },
+          {
             text: 'Links',
             items: [
               {
@@ -30,9 +34,11 @@ module.exports = {
             ]
           },
         ],
+        // sidebar: 'auto',
         sidebar: [
           '/basic/',
-          '/basic/team'
+          '/basic/team',
+          '/stack/',
         ],
         plugins: ['@vuepress/active-header-links'],
       },
@@ -47,6 +53,10 @@ module.exports = {
             link: '/es/basic/'
           },
           {
+            text: 'Stack',
+            link: '/es/stack/'
+          },
+          {
             text: 'Links',
             items: [
               {
@@ -62,9 +72,12 @@ module.exports = {
             ]
           },
         ],
-        sidebar: [
+        // sidebar: 'auto',
+        sidebar:[
+          '/es/',
           '/es/basic/',
-          '/es/basic/team'
+          '/es/basic/team',
+          '/es/stack/',
         ],
         plugins: ['@vuepress/active-header-links'],
       },
@@ -73,6 +86,7 @@ module.exports = {
       ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png"}],
       ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ],
+    sidebarDepth: 3,
   },
   locales: {
     '/': {
