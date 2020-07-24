@@ -25,7 +25,7 @@
 Yapo legacy fe es un proyecto creado bajo la necesidad de desacoplar el código 'front' de regress.
 
 En primera instancia y para poder utilizar yapo-legacy-fe se necesita clonar el proyecto en tu computador.
-Este proyecto se encuentra en [github](https://github.mpi-internal.com/Yapo/yapo-legacy-fe) y puedes descargarlo con el siguiente comando desde el terminal.
+Este proyecto se encuentra en [github](https://github.mpi-internal.com/Yapo/yapo-legacy-fe) y puedes descargarlo con el siguiente comando desde el terminal. 
 ``` bash
 git clone git@github.mpi-internal.com:Yapo/yapo-legacy-fe.git
 ```
