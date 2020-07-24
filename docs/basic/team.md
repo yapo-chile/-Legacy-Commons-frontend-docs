@@ -20,6 +20,9 @@ I'm Gabriel, also knowed as gabito, father of twins, amateur csgo & valorant pla
 I'm Tauro, love obscene food (like an hamburger amazingly big with so many things inside), also thai and japan foods are my favorites (spicyyyyy 🌶).
 I love TI world, my main professional goal is keep growing to the devops/arquitecture layer and keep growing always ✨.
 My fav music genre is math-core (something a little bit weird for 99% of people).
+I hate conceited people and that they think they are better than the rest
+My fav series are Breaking Bad, Peaky Blinders, Midnight Gospell, Bojack Horseman.
+I don't have any fav movie :-(
 
 ## Cristóbal Díaz Álvarez
 
