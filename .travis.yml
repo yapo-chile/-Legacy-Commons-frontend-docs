@@ -13,8 +13,6 @@ before_install:
   - echo -e "[url \"https://$CI_USER_TOKEN@github.mpi-internal.com\"]\n  insteadOf = ssh://git@github.mpi-internal.com" >> ~/.gitconfig
 
 install:
-  - git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-  - git fetch origin master
   - yarn --frozen-lockfile
 
 script:
