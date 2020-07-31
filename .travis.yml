@@ -19,7 +19,6 @@ install:
 
 script:
   - yarn build
-  - echo "TOKEN ${GITHUB_TOKEN}"
 
 deploy:
   provider: pages
