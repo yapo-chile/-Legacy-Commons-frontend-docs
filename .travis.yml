@@ -1,0 +1,34 @@
+sudo: false
+os: linux
+language: node_js
+node_js: '10.14'
+dist: trusty
+cache:
+  directories:
+    - ~/.nvm
+    - ~/.yarn
+    - node_modules
+
+before_install:
+  - echo -e "[url \"https://$CI_USER_TOKEN@github.mpi-internal.com\"]\n  insteadOf = ssh://git@github.mpi-internal.com" >> ~/.gitconfig
+
+install:
+  - yarn --frozen-lockfile
+
+script:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_url: github.mpi-internal.com
+  github_token: $GITHUB_TOKEN # A token generated on GitHub allowing Travis to push code on you repository. Set in the Travis settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+
+
+#after_success:
+ # - if [[ "$TRAVIS_BRANCH" = "master" && "$TRAVIS_PULL_REQUEST" = "false" ]]; then bash ./scripts/bump_vuepress.sh; fi
+ # - bash ./scripts/bump_vuepress.sh

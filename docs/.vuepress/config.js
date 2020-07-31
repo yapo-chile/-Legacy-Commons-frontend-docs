@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/yapo/frontend-docs/',
   title: 'Front docs',
   description: 'frontend docs',
   themeConfig: {

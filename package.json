@@ -6,7 +6,8 @@
   "author": "Gabriel Vial <gabriel.vial@adevinta.com>",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "test": "echo 'not required'"
   },
   "dependencies": {
     "global": "^4.3.2",
