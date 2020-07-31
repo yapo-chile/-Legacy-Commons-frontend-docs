@@ -66,7 +66,7 @@ Everything you need to know will be here.
 - [ ] Microservices
   - [ ] graphql-gateway
   - [x] Podium
-    - [x] Instroduction
+    - [x] Introduction
     - [ ] Home
     - [ ] Adview
       - [ ] Podlet heat map
