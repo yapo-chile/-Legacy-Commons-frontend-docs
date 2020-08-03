@@ -3,10 +3,10 @@ Existen varias maneras para trabajar con [microfrontend](https://micro-frontends
 
 tu puedes encontrar más información en nuestros [documentos de confluence](https://confluence.mpi-internal.com/display/YAPO/Podium)
 
-Podium es una librería que nos permite construir un sitio dividiendolo en segmentos, por ejemplo creando una cabecera, una sección de contenido y un pie de página, todos aislados.
+Podium es una librería que nos permite construir un sitio dividido en segmentos. Por ejemplo, podemos crear una cabecera, una sección de contenido y un pie de página, todos destinados para trabajar juntos, pero desarrollados y ejecutados de manera aislada.
 
 ## Nuestra estrategia
-Planeamos desacoplar Blocket con Podium, ¿cómo? agregaremos una puerta entre el usuario y el sitio:
+Planeamos desacoplar Blocket con Podium, ¿cómo? agregaremos un puente entre el usuario y el sitio:
 
 ![Podium Strategy 1](~@source/assets/podium/podium-strategy.png)
 ![Podium Strategy 2](~@source/assets/podium/podium-strategy-2.png)

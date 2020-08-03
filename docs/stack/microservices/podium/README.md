@@ -3,7 +3,7 @@ There are several approaches to working with [microfrontend](https://micro-front
 
 you can find more information in our [confluence documents](https://confluence.mpi-internal.com/display/YAPO/Podium)
 
-Podium is a library that allows us to build a site by dividing it into segments, for example creating a header, a content section and a footer, all in isolation.
+Podium is a library that allows us to build a site by dividing it into segments, for example we can create a header, a content section and a footer, all destined to work together, but developed and executed in isolation.
 
 ## Our strategy
 We plan to decouple blocket with Podium, how? we'll add a gateway between the user and the site:
