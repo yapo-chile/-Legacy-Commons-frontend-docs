@@ -24,7 +24,6 @@ Listing |  [Layout](https://github.mpi-internal.com/Yapo/podium-layout-listing),
 Dashboard |    |    | pending
 
 ## Next Steps
-
-To complete the transition from blocket to podium, we need a seed project than allow us build microfrontend easier and faster, so we are now building it, first as a client-side project, and after as a server-side, why? we have now a similar project [altiro-seed](https://github.mpi-internal.com/Yapo/altiro-seed) designed for create [microsites](/yapo/frontend-docs/stack/microsites), and it should be easier to adapt.
+To complete the transition from blocket to podium, we need a seed project that will allow us to build microfrontend easier and faster, so we are now building it, first as a client-side project, and after as a server-side, why? we have now a similar project [altiro-seed](https://github.mpi-internal.com/Yapo/altiro-seed) designed for create [microsites](/yapo/frontend-docs/stack/microsites), and it should be easier to adapt.
 
 first approach (in progress): [https://github.mpi-internal.com/Yapo/podium-podlet-header](https://github.mpi-internal.com/Yapo/podium-podlet-header)
