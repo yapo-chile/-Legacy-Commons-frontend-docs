@@ -5,7 +5,7 @@ Everything you need to know will be here.
 # #TODO
 
 ### Travis
-- [ ] Github pages
+- [x] Github pages
 - [ ] Docker
 - [ ] Lighthouse
 - [ ] Husky
@@ -58,15 +58,15 @@ Everything you need to know will be here.
 ### Stacks
 - [ ] Microsites
     - [ ] altiro-messaging
-    - [ ] altiro-reword
+    - [ ] altiro-reward
     - [ ] altiro-recurrent-payment
     - [ ] altiro-smart-landing
     - [ ] tta-landing
     - [ ] altiro-payment-delivery
 - [ ] Microservices
   - [ ] graphql-gateway
-  - [ ] Podium
-    - [ ] Instroduction
+  - [x] Podium
+    - [x] Introduction
     - [ ] Home
     - [ ] Adview
       - [ ] Podlet heat map
@@ -83,7 +83,7 @@ Everything you need to know will be here.
   - [ ] altiro-components
   - [ ] altiro
   - [ ] yapo-legacy-fe
-- [ ] Experiments
+- [x] Experiments
 - [ ] Tagging
   - [ ] Tealium
   - [ ] Pulse

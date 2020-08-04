@@ -1,3 +1,22 @@
+const page = (lang) => (title, path) => ([lang + path, title]);
+const group = (lang) => (title, path, children) => ({
+  title,
+  path: lang + path,
+  collapsable: false,
+  children,
+});
+
+const link = (lang) => (text, link, target) => ({ text, link: lang + link, target});
+const dropdown = (text, items) => ({ text, items});
+
+
+const esPage = page('/es');
+const esGroup = group('/es');
+const esLink = link('/es');
+const enPage = page('');
+const enGroup = group('');
+const enLink = link('');
+
 module.exports = {
   base: '/yapo/frontend-docs/',
   title: 'Front docs',
@@ -7,84 +26,57 @@ module.exports = {
     locales: {
       '/': {
         nav: [
-          {
-            text: 'Home',
-            link: '/'
-          },
-          {
-            text: 'Get started',
-            link: '/basic/'
-          },
-          {
-            text: 'Stack',
-            link: '/stack/'
-          },
-          {
-            text: 'Links',
-            items: [
-              {
-                text: 'docs repo',
-                link: 'https://github.mpi-internal.com/Yapo/frontend-docs',
-                target:'_blank'
-              },
-              {
-                text: 'docs vuepress',
-                link: 'https://vuepress.vuejs.org/',
-                target:'_blank'
-              }
-            ]
-          },
+          enLink('Home', '/'),
+          enLink('Getting Started', '/basic/'),
+          enLink('Stack', '/stack/'),
+          dropdown('Links', [
+            enLink('docs repo', 'https://github.mpi-internal.com/Yapo/frontend-docs', '_blank'),
+            enLink('docs vuepress', 'https://vuepress.vuejs.org/', '_blank'),
+          ]),
         ],
-        // sidebar: 'auto',
         sidebar: [
-          '/basic/',
-          '/basic/team',
-          '/stack/',
+          enPage('Getting Started','/basic/'),
+          enPage('Team','/basic/team'),
+          enGroup('Stack', '/stack', [
+            enGroup('Microservices', '/stack/microservices/', [
+              enPage('Podium','/stack/microservices/podium/'),
+            ]),
+            enPage('Experiments','/stack/experiments/'),
+            enGroup('Widgets', '/stack/widgets/', [
+              enPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
+            ]),
+          ]),
         ],
         plugins: ['@vuepress/active-header-links'],
       },
       '/es/': {
         nav: [
-          {
-            text: 'Inicio',
-            link: '/es/'
-          },
-          {
-            text: 'Empezar',
-            link: '/es/basic/'
-          },
-          {
-            text: 'Stack',
-            link: '/es/stack/'
-          },
-          {
-            text: 'Links',
-            items: [
-              {
-                text: 'docs repo',
-                link: 'https://github.mpi-internal.com/Yapo/frontend-docs',
-                target:'_blank'
-              },
-              {
-                text: 'docs vuepress',
-                link: 'https://vuepress.vuejs.org/',
-                target:'_blank'
-              }
-            ]
-          },
+          esLink('Inicio', '/'),
+          esLink('Empezar', '/basic/'),
+          esLink('Stack', '/stack/'),
+          dropdown('Links', [
+            enLink('docs repo', 'https://github.mpi-internal.com/Yapo/frontend-docs', '_blank'),
+            enLink('docs vuepress', 'https://vuepress.vuejs.org/', '_blank'),
+          ]),
         ],
-        // sidebar: 'auto',
         sidebar:[
-          '/es/',
-          '/es/basic/',
-          '/es/basic/team',
-          '/es/stack/',
+          esPage('Para Comenzar','/basic/'),
+          esPage('Equipo','/basic/team'),
+          esGroup('Stack', '/stack', [
+            esGroup('Microservicios', '/stack/microservices/', [
+              esPage('Podium','/stack/microservices/podium/'),
+            ]),
+            esPage('Experimentos','/stack/experiments/'),
+            esGroup('Widgets', '/stack/widgets/', [
+              esPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
+            ]),
+          ]),
         ],
         plugins: ['@vuepress/active-header-links'],
       },
     },
     head: [
-      ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png"}],
+      ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/yapo/frontend-docs/favicon.png"}],
       ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
     ],
     sidebarDepth: 3,
@@ -101,4 +93,11 @@ module.exports = {
       description: 'Vue Es',
     }
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': '../assets'
+      }
+    }
+  }
 }
