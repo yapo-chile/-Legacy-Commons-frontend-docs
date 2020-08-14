@@ -1,90 +1,66 @@
-# Yapo legacy fe
+# Yapo legacy FE
 
-# NEEDS TRANSLATION (SHAME ON YOU)
+Yapo legacy FE (Front-End) is a project created under the need to decouple the front code from regress.
 
-Yapo legacy fe es un proyecto creado bajo la necesidad de desacoplar el código 'front' de regress.
+To get started with it, clone the [github](https://github.mpi-internal.com/Yapo/yapo-legacy-fe) repository.
 
-En primera instancia y para poder utilizar yapo-legacy-fe se necesita clonar el proyecto en tu computador.
-Este proyecto se encuentra en [github](https://github.mpi-internal.com/Yapo/yapo-legacy-fe) y puedes descargarlo con el siguiente comando desde el terminal. 
 ``` bash
 git clone git@github.mpi-internal.com:Yapo/yapo-legacy-fe.git
 ```
 
-Ya dentro de el proyecto y al encontrarse en la respectiva branch, a utilizar, se debe:
-- Dentro del terminal ir a la carpeta sass del proyecto, esta se encuentra en root/packages/sass/src/sass.
+Then, update the project packages
 ``` bash
-cd packages/sass/src/sass
-```
-- Actualizar los paquetes del proyecto.
-``` bash
+cd yapo-legacy-fe/packages/sass/src/sass
 yarn
 ```
-- Dentro de la carpeta sass ya se puede ejecutar el proyecto.
+
+Now, in the same folder you can run the project.
 ``` bash
 yarn dev
 ```
 
-Esto compilará todos los archivos sass y alojará en un server local en el puerto xxxx, adémas de levantar los archivos, este quedara con hotreload; esto significa, que, con cada actualización de un archivo sass, se compilará automáticamente el css que se vea involucrado, por lo que bastaría solamente con recargar la página de blocket donde se estén usando.
+This will compile and serve all the sass files under the port 10001, with hot-reload, meaning that every saved change in a file will automatically update the involved css files, so you can see those changes by simply reloading the page.
 
-Para que que los cambios visuales se vean reflejados, se debe también, sincronizar con el proyecto de Yapo/yapo.cl.
+For all the visual changes to be reflected, you must also syncronize Yapo Legacy Fe with the Yapo/yapo.cl project.
 
-#### Como sincronizar Yapo-legacy-fe con Yapo/yapo.cl
+#### How to syncronize Yapo legacy Fe with Yapo/yapo.cl
 
-Para poder utilizar Yapo-legacy-fe en conjunto a Yapo/yapo.cl debes tener ambos proyectos descargados en tu computador.
+To start using Yapo legacy FE alongside Yapo/yapo.cl you must have both projects cloned. You can visit the repositories here: [Yapo/yapo.cl](git@github.mpi-internal.com:Yapo/Yapo.cl.git), [Yapo Legacy FE](https://github.mpi-internal.com/Yapo/yapo-legacy-fe)
 
-Si no haz descargado los proyectos puedes hacerlos desde [Yapo/yapo.cl](git@github.mpi-internal.com:Yapo/Yapo.cl.git), [Yapo-legacy-fe](https://github.mpi-internal.com/Yapo/yapo-legacy-fe).
+Now you have to move to your regress environment (you can learn about regress [here](https://confluence.mpi-internal.com/pages/viewpage.action?spaceKey=YAPO&title=Yapo+Regress)), run the following command:
 
-Al tener los proyectos en tu máquina local y encontrarte en las respectivas branch, debes:
-- Dentro de la carpeta de Yapo.cl, desde el terminal -dentro de regress-, ejecutar
 ``` bash
 make enable-css-redirect
 ```
-Esto habilitará una redirección de todos tus archivos css hacia el host donde tengas yapo-legacy-sass corriendo. Si quieres obtener mas información puedes leer la [documentación](https://confluence.mpi-internal.com/pages/viewpage.action?spaceKey=YAPO&title=Development+with+yapo-legacy-fe).
 
-- ¿Cómo desactivarlo?
+This will enable the redirection of al your css files to the host where yapo-legacy-sass is running. You can read the [documentación](https://confluence.mpi-internal.com/pages/viewpage.action?spaceKey=YAPO&title=Development+with+yapo-legacy-fe) for more information. 
+
+- How to desactivate it?
 ``` bash
 make disable-css-redirect
 ```
 
 #### PRE-RELEASE
 
-Se debe realizar pre-release básicamente cada vez que se requiera QA, y así apruebe nuestro Pull Request.
+When you are ready to test your changes, you will need to make a pre-release so your changes can be aproved.
 
-¿Cómo realizar pre-release?
-- Dentro del proyecto Yapo-legacy-fe, desde el terminal, situados en el root de este, se debe ejecutar:
+How to make a pre-release?
+- On the root Yapo legay FE directory, run the following command:
 ``` bash
 yarn lerna:prerelease
 ```
-  Al realizar este comando a través de la consola nos indicará la nueva versión de sass y nos pedirá nuestra aprobación (y/n), si está todo bien respondemos con 'y'. En este mismo paso nos indicará la nueva versión de sass. Si quieres obtener mas información puesde leer la [documentación](https://github.com/lerna/lerna) oficial.
+This will make a new lerna pre-release. The console will print the new version, and will ask for your approval (y/n) to continue. If everything is ok, answer with 'y'. For further information about lerna, you can read the official [documentation](https://github.com/lerna/lerna).
 
-- Dentro del proyecto Yapo/yapo.cl agregamos la nueva versión -indicada en el punto anterior- de sass, dentro de el archivo package.json, en el array de "dependencies" - "@yapo-legacy-fe/sass".
+- Now we add the new sass version (the one printed as output in the previous step) in the Yapo/yapo.cl project, by updating the dependencies array in the package.json file: - "@yapo-legacy-fe/sass".
 
-- Actualizamos nuestro proyecto de Yapo/yapo.cl, ejecutando a través del terminal, situados en el root:
+- Update the Yapo/yapo.cl project, by running the following command at the root of the project:
 ``` bash 
 yarn
 ```
 
-- Agregamos todos los cambios y los subimos a los respectivos repositorios.
+- Finally, upload the changes to their respective repositories.
 
 
 #### MERGE
 
-Al pasar bien todas las revisiones correspondientes al desarrollo realizado, se debe tener en cuenta los siguientes pasos para realizar merge correctamente de ambos proyectos -Yapo-legacy-fe, Yapo/yapo.cl-.
-- Primero se debe realizar merge de la rama del proyecto YAPO-LEGACY-FE.
-- Esperar la nueva release del proyecto; esto se puede revisar en Travis y/o Github.
-- Copiar el número de release.
-- Dentro del proyecto YAPO/YAPO.CL, actualizamos el archivo package.json, indicandole el nuevo número de release.
-- Ejecutar desde el root del proyecto -desde el editor de código-, 
-``` bash
-yarn
-```
-si deseas hacerlo desde el ambiente de regress se debe ejecutar:
-``` bash
-. artifactory-npm-env.sh && yarn
-```
-- Se deben subir los cambios -actualización de package.json- del proyecto Yapo/yapo.cl a Github.
-- Ya se puede realizar merge de la respectiva branch del proyecto Yapo/yapo.cl.
-
-::: tip
-Si se realiza merge a la branch del proyecto Yapo/yapo.cl sin la versión nueva de sass, no hay problema, se puede crear una branch nueva desde el proyecto de Yapo/yapo.cl y ahí añadir la nueva versión de sass, obtenida desde el merge del proyecto Yapo-legacy-fe.
-:::
+This section needs to be revisited due to the recent changes to the deployment process.
