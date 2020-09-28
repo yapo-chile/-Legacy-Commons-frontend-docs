@@ -69,6 +69,7 @@ module.exports = {
             esPage('Experimentos','/stack/experiments/'),
             esGroup('Widgets', '/stack/widgets/', [
               esPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
+              esPage('Custom Elements','/stack/widgets/custom-elements/'),
             ]),
           ]),
         ],
