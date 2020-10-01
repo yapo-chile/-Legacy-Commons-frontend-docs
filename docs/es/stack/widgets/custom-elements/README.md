@@ -26,6 +26,14 @@ Es necesario cumplir con todos los puntos mencionados anteriormente, ya que es l
 
 ### Como crear test
 
+Actualmente dentro de la carpeta de cada componente existe una carpeta llamada **test**, dentro de esta se pueden crear los archivos necesarios para testear nuestro componente, trabajamos con la librería de jest.
+
+Se puede visualizar la cobertura de nuestros test [aquí](https://quality-gate.mpi-internal.com/#/Yapo/yapo-widgets/3068676). También se pueden ir ejecutando desde el terminal, situados en la carpeta de el componente se debe ejecutar 
+```bash
+yarn unit
+```
+Así se podrá verificar el estado de los test creados.
+
 ### Como agregar el componente a Storybook
 
 Para documentar el componente en Storybook, se debe modificar, actualizar o crear el archivo README.md dentro de la carpeta de el componente.
@@ -133,3 +141,6 @@ Finalizamos agregando nuestro tag, ej:
 
 Y con esto ya bastaría para que el componente creado se pueda visualizar correctamente.
 
+:::tip
+Se pueden guíar por los componentes como: **card-item, yapo-alert**.
+:::

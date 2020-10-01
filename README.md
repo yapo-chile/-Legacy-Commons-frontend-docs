@@ -82,7 +82,7 @@ Everything you need to know will be here.
   - [ ] ts-services
   - [ ] altiro-components
   - [ ] altiro
-  - [ ] yapo-legacy-fe
+  - [x] yapo-legacy-fe
 - [x] Experiments
 - [ ] Tagging
   - [ ] Tealium
