@@ -38,7 +38,11 @@ Donde se incorporarán datos como:
 * Build.
 * Entre otros.
 
-
+Para visualizar Storybook de manera local, y así visualizar los cambios que incorporamos, solo debemos ejecutar en el terminal situados en el root de nuestro proyecto:
+```bash
+yarn storybook
+```
+Y en el terminal nos indicarán a que dirección ingresar.
 
 ## Prerelease
 

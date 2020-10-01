@@ -71,6 +71,7 @@ module.exports = {
               esPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
               esPage('Custom Elements','/stack/widgets/custom-elements/'),
             ]),
+            esPage('Test','/stack/test/'),
           ]),
         ],
         plugins: ['@vuepress/active-header-links'],
