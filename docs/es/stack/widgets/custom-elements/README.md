@@ -66,10 +66,10 @@ Al realizar esto, en la misma consola nos dará una nueva versión de nuestro co
 ![confirmation2](~@source/assets/custom-elements/prerelease/confirmation2.png)
 
 :::danger
-OJO: por cada cambio que detecte lerna -en mas de un componente- este creara un tag, en este caso y actualmente, no es factible que se publique mas de un tag a la vez.
+OJO: por cada cambio que detecte lerna -en mas de un componente- este creara un tag, en este caso y actualmente, no es factible que se publique mas de 4 tag a la vez.
 :::
 
-### Que hacer si se publica mas de un tag?
+### Que hacer si se publica mas de 4 tag?
 
 Se deberá borrar los tag y se volverán a crear.
 * Eliminar el tag que se había creado en la prerelease; desde el root de nuestro proyecto, ejecutar en la consola:
