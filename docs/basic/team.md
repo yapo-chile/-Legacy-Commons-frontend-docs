@@ -27,3 +27,7 @@ I don't have any fav movie :-(
 ## Cristóbal Díaz Álvarez
 
 Software engineer specialized in software development with web technologies. In yapo I am a FrontEnd Developer, but I have experience other tasks of software development, in other companies such as Fullstack Senior Developer, with frameworks/tools that use JS/TS like Node, Angular, AngularJS, React, Bootstrap, Loopback , etc. Born in 1991 in Santiago de Chile, art lover like photography, music, illustration/painting, cinema, and nature. I do not play musical instruments.
+
+## Nicolás Fredes
+
+I like to be called Nico, i'm a Softwere Engineer with experience in both, frontend and backend. I have ten years of experience as Developer focused mainly on web systems and i like everything related to MicroServices, API, Component-based Web Development, Clean Code, SOLID. I have experience with Laravel and Node, VueJS and ReactJS. In Yapo i perform as Frontend developer from October 2020. miscellaneous about me: I Like sports (Basquetball and football mainly, running and trail running too), i have a dog called Tobi, i'm married and have a son with ten years old. I'm a Diecast cars collector (Hotwheels mainly) and Amateur Phothographer, i enjoy listen to music (Black Music Mainly), watch series and movies on Netflix, my favorite food is steak with rice.
