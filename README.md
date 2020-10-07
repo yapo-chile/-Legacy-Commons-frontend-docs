@@ -77,12 +77,12 @@ Everything you need to know will be here.
   - [ ] JS
   - [ ] CSS
 - [ ] Widgets
-  - [ ] yapo-widgets
+  - [x] yapo-widgets
     - [ ] swiss
   - [ ] ts-services
   - [ ] altiro-components
   - [ ] altiro
-  - [ ] yapo-legacy-fe
+  - [x] yapo-legacy-fe
 - [x] Experiments
 - [ ] Tagging
   - [ ] Tealium

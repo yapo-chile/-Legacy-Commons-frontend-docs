@@ -44,7 +44,9 @@ module.exports = {
             enPage('Experiments','/stack/experiments/'),
             enGroup('Widgets', '/stack/widgets/', [
               enPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
+              enPage('Custom Elements','/stack/widgets/custom-elements/'),
             ]),
+            enPage('Test','/stack/test/'),
           ]),
         ],
         plugins: ['@vuepress/active-header-links'],
@@ -69,7 +71,9 @@ module.exports = {
             esPage('Experimentos','/stack/experiments/'),
             esGroup('Widgets', '/stack/widgets/', [
               esPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
+              esPage('Custom Elements','/stack/widgets/custom-elements/'),
             ]),
+            esPage('Test','/stack/test/'),
           ]),
         ],
         plugins: ['@vuepress/active-header-links'],
