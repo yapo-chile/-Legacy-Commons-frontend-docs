@@ -7,6 +7,13 @@
 ## Fernanda Cancino
 
 ## Claudio Donoso
+Since January 2017 I have been working in this great family of great people called Yapo. I work in web development since 2013, I worked in advertising agencies, I work freelance and now in Yapo too. I enjoy learning new things, languages​​, and frameworks.
+
+I love solving problems, everything types of bug, my mind always is working to do there best job any process that I am involved. I listen music and then I exist, love funky music, my favorite band is Jamiroquai. The better talks are with humility people, life is short so you must learn to fly quickly. I follow the road of the autodidact and I am a proactive person, think it's revolutionary.  I find huge motivation in sport, love trekking and the bike is my best transport. 
+
+My son is my heart and covers my soul with love <3
+
+My favorites series are Breaking Bad, Mr. Robot, Peaky Blinders, Mindhunter, True Detective, Hunter X Hunter, Naruto Shippuden, Bleach. My favorites movies are La vita è bella, BreaveHeart, Dance with Wolves, and all Movies from Studio Ghibli, the best movie Howl's Moving Castle (Howl no Ugoku Shiro). Like a lot the writer Haruki Murakami and one of his best books is ‘Una crónica del pájaro que da cuerda al mundo’.
 
 ## Renato Hormazábal
 
