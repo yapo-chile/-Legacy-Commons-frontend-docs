@@ -1,78 +1,79 @@
-# Experimentos 
-# NEEDS TRANSLATION (SHAME ON YOU)
+# Experimentos
 
-### What is Houston and how it works
+### Que es Houston y como funciona
 
-Houston is a  _A/A_, _A/B_, _A/B/C_ development testing platform made by Adevinta.
+Houston es una plataforma de desarrollo para test _A/A_, _A/B_, _A/B/C_, desarrollada por Adevinta.
 
-The way that it works is through _Feature Flags_, these are like variables to handle inside the experiment itself.
+Funciona a través de _Feature Flags_, que se podrían considerar como variables para controlar el experimento.
 
-With every experiment, there is at least one Feature Flag, an Allocated Percentage of users where the experiment will apply any of the variants, QA to force check any variant, and a scheduler.
+En cada experimento, debe existir al menos un _Feature Flag_, un porcentaje de alocación de usuarios en donde el experimento segmentará a los usuarios entre las variantes, y un estado (se puede dejar agendado, o que sólamente corra, o que parta apagado). También se pueden agregar usuarios QA para forzar que vean alguna variante en especifíca.
 
-By now, Houston is only running on _MSITE_ and _Apps_, on desktop there is no chance yet to test this kind of things.
+Por ahora, Houston sólo funciona en _MSITE_ y _Aplicaciones Móbiles_, aún no hay opción disponible para hacer experimentos en _Desktop_.
 
-As an example, if you want to test a bigger contact button, or a different font in a specific page (or whatever), you can develop the script with the feat, create a feature flag with the insertion and not insertion of the script, and assign every other information; and see it live in seconds.
+A modo de ejemplo, si quisieras probar un botón de contacto más grande, o una fuente específica a una página, o cualquier cosa; podrías hacer un script que emcapsule ese cambio, crear un _feature flag_ haga la inserción o no inserción del script, y verlo en vivo en segundos.
 
-### Houston environments
 
-There are 3 different environments by now
+### Entornos de Houston
 
+Actualmente existen 3 entornos:
 * Houston Dev
 * Houston Pre
 * Houston Pro
 
+
 #### Houston Dev
 
-The development environment of Houston is loaded inside every Yapo dev instance for msite, every experiment should be displayed on every dev environment
+El entorno de desarrollo de Houston está montado en todos los ambientes dev para msite, es decir, todos los experimentos para msite, se podrían ver en todos los entornos.
 
 ```
 https://m.dev01.yapo.cl/
 https://m.dev02.yapo.cl/
 https://m.dev03.yapo.cl/
-and so on.
+y así con los demás.
 ```
 
 
 #### Houston Pre
 
-As I know, pre environment is not working (?)
+Hasta donde se sabe, la versión de pre-producción (STG), no está funcionando.
 
 #### Houston Pro
 
-The production environment of Houston loads every experiment inside m.yapo.cl, so be careful starting the experiment for the first time to check if it breaks or not.
+El entorno de producción carga todos los experimentos en _m.yapo.cl_, así que ojo al empezar un experimento por primera vez, asegúrate de que no se esté rompiendo nada más.
 
 
-### How to experiment and necessary stuff
+### Información necesaria
 
 #### Feature flags:
 
-Every feature flag must contain these things:
+Cada feature flag debe contener las siguientes cosas:
 
-- **Name**: every experiment would handle a feature flag name, so it must be self explanatory.
-- **Description**: a short description of what will this variable do.
-- **Type**: the type can be _text_, _number_, _boolean_ or _custom_.
-- **Value** this is the initial value for this feature flag, as it exists after every experiment; you should care to not break anything.
-- **Tenant**: is in which marketplace this feature flag will be applied.
-- **Application**: is in which application will be applied.
-- **Platform**: in our case, it should always be _Web_, as the other options are mobile platforms.
+- **Name**: cada experimento debe tener al menos un feature flag, así que trata de que el nombre de la variable sea autodescriptivo.
+- **Description**: una descripción corta de qué será lo que hará esta variable.
+- **Type**: puede ser de tipo  _text_, _number_, _boolean_ o _custom_.
+- **Value** este es el valor inicial que tendrá nuestro feature flag, este valor se carga en el sitio indiferente del estado del experimento, así que cuidado con no romper nada.
+- **Tenant**: en cuál marketplace se aplicará.
+- **Application**: es cual aplicación se cargará.
+- **Platform**: en nuestro caso, esta siempre debiese ser _Web_, ya que la otra opción son las aplicaciones móviles.
 
-#### Experiment:
 
-Every experiment must contain these things:
+#### Experimentos:
 
-- **Experiment name**: every experiment must contain a self explanatory name.
-- **Hypothesis**: is like a description, but focusing on what will your experiment test do, and how it will achieve something else (eg: by changing _x_, i can get more _y_ or increase _z_).
-- **Tenant**: same as feature flag, which marketplace this experiment will be applied.
-- **Application**: which application it will be applied.
-- **Platform**: as the feature flag before, it should be _Web_ as long as we are the frontend team.
-- **Feature flag**: which feature flag will be the control variable.
-- **N Variants**: you can add _n_ variants with differents values based on the feature flag used.
-- **User allocation**: % allocation of users on every variant. if you're testing, 0% is the best way, including your pulse id on _QA users_.
-- **QA users**: here you can asign a pulse id to watch an especific variant (especially for testing purposes) ***.
-- **State**: you can schedule or run the experiment whenever you want (please save the experiment id for your _Product Owner_).
+Cada experimento debe contener lo siguiente:
+
+- **Experiment name**: todo experimento debiese llevar un nombre autodescriptivo.
+- **Hypothesis**: es similar a la descripción, pero enfocada en qué es lo que hará el experimento, y que es lo que se espera del mismo (ej: cambiando _x_, esperamos aumentar _y_, o conseguir más leads en _z_).
+- **Tenant**: similar al _feature flag_, será el marketplace al que se agregue este experimento.
+- **Application**: a que aplicación se cargará este experimento.
+- **Platform**: siguiendo la linea de que somos equipo front, por defecto su valor será _Web_.
+- **Feature flag**: cual será el _feature flag_ asociado al experimento, en las variantes podremos cambiar el valor de este..
+- **N Variants**: se pueden crear _n_ variantes con diferentes valores, según el _feature flag_ que estemos usando.
+- **User allocation**: % de usuarios a los que se les mostrará cada variante; puedes setear en 0% si sólo quieres probar con algunos id en _QA users_.
+- **QA users**: acá puedes agregar distintos _pulse id_ para forzar a que vean alguna variante en específico (sirve muchísimo al momento de hacer testing, o mostrar progreso con el equipo) ***.
+- **State**: siempre está la opción de dejar programado el encendido del experimento, dejarlo corriendo, o mantenerlo en standby (siempre trata de guardar el _id del experimento_ para entregárselo a tu _Product Owner_).
 
 ***.
-You can get your pulse id using this script in your browser console on any yapo site.
+Si necesitas conseguir tu _pulse id_, puedes usar este script en la consola del explorador en todos los ambientes de yapo.
 ```
 pulse(tracker => tracker.getEnvironmentId().then(id => console.log('pulse id', id)))
 ```
