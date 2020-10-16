@@ -6,8 +6,8 @@ const group = (lang) => (title, path, children) => ({
   children,
 });
 
-const link = (lang) => (text, link, target) => ({ text, link: lang + link, target});
-const dropdown = (text, items) => ({ text, items});
+const link = (lang) => (text, link, target) => ({ text, link: lang + link, target });
+const dropdown = (text, items) => ({ text, items });
 
 
 const esPage = page('/es');
@@ -35,18 +35,18 @@ module.exports = {
           ]),
         ],
         sidebar: [
-          enPage('Getting Started','/basic/'),
-          enPage('Team','/basic/team'),
+          enPage('Getting Started', '/basic/'),
+          enPage('Team', '/basic/team'),
           enGroup('Stack', '/stack', [
             enGroup('Microservices', '/stack/microservices/', [
-              enPage('Podium','/stack/microservices/podium/'),
+              enPage('Podium', '/stack/microservices/podium/'),
             ]),
-            enPage('Experiments','/stack/experiments/'),
+            enPage('Experiments', '/stack/experiments/'),
             enGroup('Widgets', '/stack/widgets/', [
-              enPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
-              enPage('Custom Elements','/stack/widgets/custom-elements/'),
+              enPage('Yapo Legacy fe', '/stack/widgets/yapo-legacy-fe/'),
+              enPage('Custom Elements', '/stack/widgets/custom-elements/'),
             ]),
-            enPage('Test','/stack/test/'),
+            enPage('Test', '/stack/test/'),
           ]),
         ],
         plugins: ['@vuepress/active-header-links'],
@@ -61,27 +61,30 @@ module.exports = {
             enLink('docs vuepress', 'https://vuepress.vuejs.org/', '_blank'),
           ]),
         ],
-        sidebar:[
-          esPage('Para Comenzar','/basic/'),
-          esPage('Equipo','/basic/team'),
+        sidebar: [
+          esPage('Para Comenzar', '/basic/'),
+          esPage('Equipo', '/basic/team'),
           esGroup('Stack', '/stack', [
             esGroup('Microservicios', '/stack/microservices/', [
-              esPage('Podium','/stack/microservices/podium/'),
+              esPage('Podium', '/stack/microservices/podium/'),
             ]),
-            esPage('Experimentos','/stack/experiments/'),
+            esPage('Experimentos', '/stack/experiments/'),
             esGroup('Widgets', '/stack/widgets/', [
-              esPage('Yapo Legacy fe','/stack/widgets/yapo-legacy-fe/'),
-              esPage('Custom Elements','/stack/widgets/custom-elements/'),
+              esPage('Yapo Legacy fe', '/stack/widgets/yapo-legacy-fe/'),
+              esPage('Custom Elements', '/stack/widgets/custom-elements/'),
             ]),
-            esPage('Test','/stack/test/'),
+            esGroup('Regress', '/stack/regress/', [
+              esPage('Desarrolla en tu contenedor', '/stack/regress/develop-remotely/')
+            ]),
+            esPage('Test', '/stack/test/'),
           ]),
         ],
         plugins: ['@vuepress/active-header-links'],
       },
     },
     head: [
-      ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/yapo/frontend-docs/favicon.png"}],
-      ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
+      ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/yapo/frontend-docs/favicon.png" }],
+      ['link', { rel: "shortcut icon", href: "/favicon.ico" }],
     ],
     sidebarDepth: 3,
   },
