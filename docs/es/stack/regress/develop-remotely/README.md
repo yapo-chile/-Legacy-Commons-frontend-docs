@@ -73,7 +73,7 @@ instala los paquetes
 sudo rpm -Uvh \
     libstdc++-4.8.2-16.3.el6.x86_64.rpm \
     libstdc++-devel-4.8.2-16.3.el6.x86_64.rpm \
-    libstdc++-static-4.8.2-16.3.el6.x86_64.rpm
+    libstdc++-static-4.8.2-16.3.el6.x86_64.rpm --force --nodeps
 ```
 
 Reinicia tu contenedor
