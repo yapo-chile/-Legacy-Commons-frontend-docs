@@ -18,6 +18,13 @@ adv yapo-regress selenium-up
 nose nombre.completo.del.test
 ```
 
+### Observar test corriendo en chrome
+Bajar software como: VNC Viewer
+
+Utilizar estos datos en la App:
+  - url: localhost:15901
+  - pass: secret
+
 
 ## Trans Test
 

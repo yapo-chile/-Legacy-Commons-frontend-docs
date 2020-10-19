@@ -16,7 +16,7 @@ Everything you need to know will be here.
 
 - [ ] Team rules *
 ---
-- [ ] Claudio Donoso
+- [X] Claudio Donoso
 - [ ] Renato Hormazabal
 - [ ] Sebastián Altamirano
 - [ ] Fernanda Cancino
