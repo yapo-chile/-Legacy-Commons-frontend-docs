@@ -89,7 +89,7 @@ After making our repository work locally, we're going to find this ugly alert
 
 ![error_git](~@source/assets/regress/error_git.png)
 
-This isn't exactly blocking our flow, but it's a problem as we're unable to use __Git__ related extensions as __Git Lens__ (to see who committed each line) or __Source Control__ (to see changes on our local branch).
+This isn't exactly blocking our flow, but it's a problem as we're unable to use __Git__ related extensions like __Git Lens__ (to see who committed each line) or __Source Control__ (to see changes on our local branch).
 
 To solve this, we strongly recommend to __Update Git__.
 
