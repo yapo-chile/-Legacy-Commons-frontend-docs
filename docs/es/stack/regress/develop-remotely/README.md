@@ -83,3 +83,39 @@ Reinicia tu contenedor
 ```bash 
 docker restart <CONTAINER-ID>
 ```
+
+
+## Actualiza Git
+
+Luego de comenzar a trabajar remotamente en nustro repositorio, nos encontraremos con esta molesta alerta
+
+![error_git](~@source/assets/regress/error_git.png)
+
+Esto no es exactamente bloqueante en nuestro flujo de trabajo, pero será un problema al momento de usar extensiones de __VSCode__ que usan de Git como __Git Lens__ (para ver quien hiso commit a cada linea) o __Source Control__ (para ver los cambios en nuestra rama local).
+
+Para resolver esto, recomendamos fuertemente __Actualizar Git__
+
+### Actualiza git usando yum
+
+
+La forma mas rapida con la que puedes actualizar git es usando __yum__ (*yellowdog updater, modified*), el cual ya está instalado en nuestra versión de __CentOS__.
+
+> Copia y pega estos comands dentro de la terminal de tu contenedor para actualizar git
+
+Instal a remote copy of the git's __rpm__ package
+Instala le versión remota del paquete __rpm__ de Git.
+
+```bash
+sudo yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
+```
+
+Instala el paquete en tu sistema
+
+```bash
+sudo yum install git
+```
+Y Lo hemos logrado!, puedes testear tu versión de Git con el siguiente comando;
+
+```bash
+git --version
+```

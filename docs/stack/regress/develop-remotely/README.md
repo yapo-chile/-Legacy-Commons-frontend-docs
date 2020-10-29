@@ -82,3 +82,38 @@ And we're done! now you just must to restart your container
 ```bash 
 docker restart <YOUR-CONTAINER-ID>
 ```
+
+## Update git
+
+After making our repository work locally, we're going to find this ugly alert
+
+![error_git](~@source/assets/regress/error_git.png)
+
+This isn't exactly blocking our flow, but it's a problem as we're unable to use __Git__ related extensions as __Git Lens__ (to see who committed each line) or __Source Control__ (to see changes on our local branch).
+
+To solve this, we strongly recommend to __Update Git__.
+
+### Update git with Yum package manager
+
+The faster you can update your container's git version is using __yum__ (*yellowdog updater, modified*), which is already installed on our __CentOS__ version.
+
+
+> Copy and paste the commands inside your container's terminal to update git
+
+Instal a remote copy of the git's __rpm__ package
+
+```bash
+sudo yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
+```
+
+Install the package in your container
+
+```bash
+sudo yum install git
+```
+
+And we're done! you can test your git version with this command:
+
+```bash
+git --version
+```
