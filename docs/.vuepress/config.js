@@ -46,6 +46,9 @@ module.exports = {
               enPage('Yapo Legacy fe', '/stack/widgets/yapo-legacy-fe/'),
               enPage('Custom Elements', '/stack/widgets/custom-elements/'),
             ]),
+            enGroup('Regress', '/stack/regress/', [
+              enPage('Develop remotely', '/stack/regress/develop-remotely/'),
+            ]),
             enPage('Test', '/stack/test/'),
           ]),
         ],
