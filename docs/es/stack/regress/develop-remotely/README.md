@@ -9,9 +9,9 @@ Como puedes ver, ninguna de de estas opciones nos provee un flujo de desarrollo 
 
 Podemos desarrollar unicamente sobre la version de regress que se encuentra en nuestro contenedor, pero accediendo a el mediante el plugin __remote explorer__ de __VSCode__. De esta forma nos deshacemos de la necesidad de una copia local de Yapo.cl, y nos aseguramos de tener solo un codigo fuente.
 
-Al instalar la extension __remote:containers__ en VSCode e intentar conectarnos a nuestro contenedor, encontraremos este error
+Al instalar la extension __remote - containers__ en VSCode e intentar conectarnos a nuestro contenedor, encontraremos este error
 
-> GLIBCXX_3.4.18 not found:
+> /usr/lib/libstdc++.so.6: version GLIBCXX_3.4.18 not found
 
 El contenedor de Yapo.cl posee el sistema operativo CentOS 6.10, y esta version posee versiones de las librerias __libstc++__ y __glibc__ demasiado antiguas. NodeJS no puede funcionar sin __GLIBCXX_3.4.18__.
 
