@@ -77,7 +77,7 @@ module.exports = {
               esPage('Custom Elements', '/stack/widgets/custom-elements/'),
             ]),
             esGroup('Regress', '/stack/regress/', [
-              esPage('Desarrolla en tu contenedor', '/stack/regress/develop-remotely/')
+              esPage('Desarrolla en tu contenedor', '/stack/regress/develop-remotely/'),
             ]),
             esPage('Test', '/stack/test/'),
           ]),
