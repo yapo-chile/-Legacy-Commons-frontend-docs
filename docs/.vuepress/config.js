@@ -73,9 +73,7 @@ module.exports = {
           esPage('Para Comenzar', '/basic/'),
           esPage('Equipo', '/basic/team'),
           esGroup('Practicas', '/practices/', [
-            esGroup('Practicas', '/practices/', [
               esPage('BEM', '/practices/BEM/'),
-            ]),
           ]),
           esGroup('Stack', '/stack', [
             esGroup('Microservicios', '/stack/microservices/', [
