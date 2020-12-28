@@ -34,7 +34,7 @@ Everything you need to know will be here.
 
 ### Practices
 - [ ] functional programming
-- [ ] BEM
+- [x] BEM
 - [ ] Mobile first
 - [ ] Design System
   - [ ] Kultrün

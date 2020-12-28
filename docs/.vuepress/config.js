@@ -29,6 +29,7 @@ module.exports = {
           enLink('Home', '/'),
           enLink('Getting Started', '/basic/'),
           enLink('Stack', '/stack/'),
+          enLink('Practices', '/practices/'),
           dropdown('Links', [
             enLink('docs repo', 'https://github.mpi-internal.com/Yapo/frontend-docs', '_blank'),
             enLink('docs vuepress', 'https://vuepress.vuejs.org/', '_blank'),
@@ -37,6 +38,9 @@ module.exports = {
         sidebar: [
           enPage('Getting Started', '/basic/'),
           enPage('Team', '/basic/team'),
+          enGroup('Practices', '/practices/', [
+            enPage('BEM', '/practices/BEM/'),
+          ]),
           enGroup('Stack', '/stack', [
             enGroup('Microservices', '/stack/microservices/', [
               enPage('Podium', '/stack/microservices/podium/'),
@@ -59,6 +63,7 @@ module.exports = {
           esLink('Inicio', '/'),
           esLink('Empezar', '/basic/'),
           esLink('Stack', '/stack/'),
+          esLink('Practicas', '/practices/'),
           dropdown('Links', [
             enLink('docs repo', 'https://github.mpi-internal.com/Yapo/frontend-docs', '_blank'),
             enLink('docs vuepress', 'https://vuepress.vuejs.org/', '_blank'),
@@ -67,6 +72,9 @@ module.exports = {
         sidebar: [
           esPage('Para Comenzar', '/basic/'),
           esPage('Equipo', '/basic/team'),
+          esGroup('Practicas', '/practices/', [
+              esPage('BEM', '/practices/BEM/'),
+          ]),
           esGroup('Stack', '/stack', [
             esGroup('Microservicios', '/stack/microservices/', [
               esPage('Podium', '/stack/microservices/podium/'),
