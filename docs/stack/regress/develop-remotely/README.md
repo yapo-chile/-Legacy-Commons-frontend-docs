@@ -165,3 +165,5 @@ Excecute to update terminal
 ```bash
 source ~/.bashrc
 ```
+
+That's all! With this steps you can develop and excecute regress commands on a single codebase.
