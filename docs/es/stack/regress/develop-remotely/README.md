@@ -9,9 +9,15 @@ Como puedes ver, ninguna de de estas opciones nos provee un flujo de desarrollo 
 
 Podemos desarrollar unicamente sobre la version de regress que se encuentra en nuestro contenedor, pero accediendo a el mediante el plugin __remote explorer__ de __VSCode__. De esta forma nos deshacemos de la necesidad de una copia local de Yapo.cl, y nos aseguramos de tener solo un codigo fuente.
 
+> Nota: Si estás leyendo esto despues de enero del 2021, probablemente los siguientes pasos no sean necesarios, puedes saltar directamente a __Instalar y usar la extensión Remote - Containers__
+
+## Actualizar librerias del SO
+
 Al instalar la extension __remote - containers__ en VSCode e intentar conectarnos a nuestro contenedor, encontraremos este error
 
-> /usr/lib/libstdc++.so.6: version GLIBCXX_3.4.18 not found
+```bash
+/usr/lib/libstdc++.so.6: version GLIBCXX_3.4.18 not found
+```
 
 El contenedor de Yapo.cl posee el sistema operativo CentOS 6.10, y esta version posee versiones de las librerias __libstc++__ y __glibc__ demasiado antiguas. NodeJS no puede funcionar sin __GLIBCXX_3.4.18__.
 
@@ -119,3 +125,49 @@ Y Lo hemos logrado!, puedes testear tu versión de Git con el siguiente comando;
 ```bash
 git --version
 ```
+
+## Instalar y usar la extensión __Remote - Containers__
+
+Estándo dentro de VSCode, abre el __panel de extensiones__ ( __shift__ + __command__ + __x__ ). dentro del buscador ingresa __Remote - Containers__
+
+![remote_containers](~@source/assets/regress/remote_containers.png)
+
+
+Presiona instalar y la extensión se encontrará activa dentro de tu Editor
+
+### Abrir contenedor de Docker
+
+Una vez instalada la extensión __Remote - Containers__, apareceá la opción __Remote Explorer__ en el menú lateral.
+
+![remote_explorer](~@source/assets/regress/remote_explorer.png)
+
+Presionando esta opción, te aparecerá una lista de contenedores sobre los que puedes iniciar VSCode.
+
+![container_list](~@source/assets/regress/container_list.png)
+
+Al posar el puntero sobre el nombre de tu contenedor, aparecerán dos iconos; uno para conectarse al contenedor y otro para eliminar el contendor. Haremos click a "Attach to container"
+![attach](~@source/assets/regress/attach.png)
+
+> La primera vez, te pedirá seleccionar la carpeta del contenedor sobre la cual vamos a trabajar, para regress es __Yapo.cl__.
+
+### Usa VSCode con ISO 8859-1
+
+Dentro de tu contenedor, en VSCode, ingresa a __Opciones__ ( __command__ + __,__ ), y selecciona la pestaña de tu contenedor. Desde acá puedes definir el __Encoding default de tu contenedor__ como __Latin 1__ ( __ISO 8859-1__ )
+
+![configs](~@source/assets/regress/configs.png)
+
+#### Latin 1 en terminal
+
+El comando ```make rall``` regress fallará a menos que tu consola se encuentre en el encoding correcto. para setearlo definitivamente, abre la terminal integrada dentro de tu contenedor de Docker y ejecuta el siguiente comando.
+
+```bash
+echo "export LANG=en_US.ISO-8859-1" >> ~/.bashrc
+```
+Este comando agrega una nueva linea dentro del archivo **~/.bashrc**. Si usas una shell distinta solo debes agregar ```export LANG=en_US.ISO-8859-1``` a tu archivo de configuración.
+
+Ejecuta source al archivo
+```bash
+source ~/.bashrc
+```
+
+Es todo! Con esto puedes comenzar a desarrollar y ejecutar tus comandos de regress desde un solo **codebase**
