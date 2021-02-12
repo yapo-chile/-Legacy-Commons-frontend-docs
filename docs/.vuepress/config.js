@@ -52,6 +52,7 @@ module.exports = {
             ]),
             enGroup('Regress', '/stack/regress/', [
               enPage('Develop remotely', '/stack/regress/develop-remotely/'),
+              enPage('Mobile Adinsert', '/stack/regress/adinsert/'),
             ]),
             enPage('Test', '/stack/test/'),
           ]),
@@ -86,6 +87,7 @@ module.exports = {
             ]),
             esGroup('Regress', '/stack/regress/', [
               esPage('Desarrolla en tu contenedor', '/stack/regress/develop-remotely/'),
+              esPage('Mobile Adinsert', '/stack/regress/adinsert/'),
             ]),
             esPage('Test', '/stack/test/'),
           ]),
