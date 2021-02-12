@@ -137,6 +137,7 @@ Once the extension is installed, you will see the __Remote Explorer__ option on 
 ![remote_explorer](~@source/assets/regress/remote_explorer.png)
 
 Press this option and you will see a tab with the list of avaliable containers in your machine
+
 ![container_list](~@source/assets/regress/container_list.png)
 
 Hover above container's name and you will see two buttons; One is to attach to container and the another one is to delete it. Press ```Attach to container```
@@ -148,7 +149,7 @@ Hover above container's name and you will see two buttons; One is to attach to c
 ### Use VSCode with ISO 8851-1
 Inside of your VSCode's container, enter to options ( __command__ + __,__ ), choose your container tab an define ```files.encoding``` as ```ISO 8859-1```
 
-![configs](~œsource/assets/regress/configs.png)
+![configs](~@source/assets/regress/configs.png)
 
 ### ISO 8859-1 on terminal
 
@@ -166,4 +167,4 @@ Excecute to update terminal
 source ~/.bashrc
 ```
 
-That's all! With this steps you can develop and excecute regress commands on a single codebase.
+That's all! With this steps you can develop and excecute regress commands on a single **codebase**.

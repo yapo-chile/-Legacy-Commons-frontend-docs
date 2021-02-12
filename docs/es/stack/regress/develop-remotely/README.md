@@ -11,7 +11,7 @@ Podemos desarrollar unicamente sobre la version de regress que se encuentra en n
 
 > Nota: Si estás leyendo esto despues de enero del 2021, probablemente los siguientes pasos no sean necesarios, puedes saltar directamente a __Instalar y usar la extensión Remote - Containers__
 
-## Actualizar librerias del SO
+## Actualizar librerias del SO
 
 Al instalar la extension __remote - containers__ en VSCode e intentar conectarnos a nuestro contenedor, encontraremos este error
 
@@ -126,7 +126,7 @@ Y Lo hemos logrado!, puedes testear tu versión de Git con el siguiente comando;
 git --version
 ```
 
-## Instalar y usar la extensión __Remote - Containers__
+## Instalar y usar la extensión Remote - Containers
 
 Estándo dentro de VSCode, abre el __panel de extensiones__ ( __shift__ + __command__ + __x__ ). dentro del buscador ingresa __Remote - Containers__
 
@@ -135,7 +135,7 @@ Estándo dentro de VSCode, abre el __panel de extensiones__ ( __shift__ + __comm
 
 Presiona instalar y la extensión se encontrará activa dentro de tu Editor
 
-### Abrir contenedor de Docker
+## Abrir contenedor de Docker
 
 Una vez instalada la extensión __Remote - Containers__, apareceá la opción __Remote Explorer__ en el menú lateral.
 
@@ -150,13 +150,13 @@ Al posar el puntero sobre el nombre de tu contenedor, aparecerán dos iconos; un
 
 > La primera vez, te pedirá seleccionar la carpeta del contenedor sobre la cual vamos a trabajar, para regress es __Yapo.cl__.
 
-### Usa VSCode con ISO 8859-1
+## Usa VSCode con ISO 8859-1
 
 Dentro de tu contenedor, en VSCode, ingresa a __Opciones__ ( __command__ + __,__ ), y selecciona la pestaña de tu contenedor. Desde acá puedes definir el __Encoding default de tu contenedor__ como __Latin 1__ ( __ISO 8859-1__ )
 
 ![configs](~@source/assets/regress/configs.png)
 
-#### Latin 1 en terminal
+## Latin 1 en terminal
 
 El comando ```make rall``` regress fallará a menos que tu consola se encuentre en el encoding correcto. para setearlo definitivamente, abre la terminal integrada dentro de tu contenedor de Docker y ejecuta el siguiente comando.
 
@@ -170,4 +170,4 @@ Ejecuta source al archivo
 source ~/.bashrc
 ```
 
-Es todo! Con esto puedes comenzar a desarrollar y ejecutar tus comandos de regress desde un solo **codebase**
+Es todo! Con esto puedes comenzar a desarrollar y ejecutar tus comandos de regress desde un solo **codebase**.
