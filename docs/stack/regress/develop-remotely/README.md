@@ -9,6 +9,10 @@ As you can see, both cases create problems; The first one forces us to be a vim'
 
 To solve this problem, we can use plugins on our favourite editor, in this case __remote explorer__ for __Visual Studio Code__. Connecting remotely to our container allow us to use all kind of extensions and helpers of our IDE, while keeping a single font of truth for our codebase.
 
+## Updating OS libraries
+
+> Note, if you are reading this after january 2021, its safe for you jump to __Install and use remote - containers extension__
+
 To this point everything sounds so cool right?, but putting this on practice you will find this:
 ![error_container](~@source/assets/regress/error_container.png)
 
@@ -117,3 +121,50 @@ And we're done! you can test your git version with this command:
 ```bash
 git --version
 ```
+
+## install and use _remote - containers_ extension
+
+Being on any folder of VSCode, open the __Extensions tab__ ( __shift__ + __command__ + __x__ ). And search for __Remote - Containers__
+
+![remote_containers](~@source/assets/regress/remote_containers.png)
+
+Press install and the extension will be enable on your editor.
+
+### Open Docker container on VSCode
+
+Once the extension is installed, you will see the __Remote Explorer__ option on sidebar.
+
+![remote_explorer](~@source/assets/regress/remote_explorer.png)
+
+Press this option and you will see a tab with the list of avaliable containers in your machine
+
+![container_list](~@source/assets/regress/container_list.png)
+
+Hover above container's name and you will see two buttons; One is to attach to container and the another one is to delete it. Press ```Attach to container```
+
+![attach](~@source/assets/regress/attach.png)
+
+> The first time you enter, VSCode will make you choose the folder inside the container you will work in. For our case, **Yapo.cl**.
+
+### Use VSCode with ISO 8851-1
+Inside of your VSCode's container, enter to options ( __command__ + __,__ ), choose your container tab an define ```files.encoding``` as ```ISO 8859-1```
+
+![configs](~@source/assets/regress/configs.png)
+
+### ISO 8859-1 on terminal
+
+The regress command ```make rall``` will fail unless you're using the right encoding, you can set it via bash with the nex command on your container's terminal.
+
+```bash
+echo "export LANG=en_US.ISO-8859-1" >> ~/.bashrc
+```
+
+This commands added a new line into ```~/.bashrc```. If you use another shell, or you desire a more custom implementation, you can edit bash manually.
+
+Excecute to update terminal
+
+```bash
+source ~/.bashrc
+```
+
+That's all! With this steps you can develop and excecute regress commands on a single **codebase**.
