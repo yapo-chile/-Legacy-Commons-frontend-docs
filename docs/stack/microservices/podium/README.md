@@ -19,11 +19,18 @@ We have already build a gateway to the Home ([mobile](https://m.yapo.cl/) and [d
 Page | Repository | Adoption | Status
 --- | --- | --- | :---:
 Home      | [Layout](https://github.mpi-internal.com/Yapo/podium-layout-home), [Podlet legacy](https://github.mpi-internal.com/Yapo/podium-podlet-home-legacy) | desktop 100%, mobile 100%| success
-Adview     | [Layout](https://github.mpi-internal.com/Yapo/podium-layout-adview), [Podlet legacy](https://github.mpi-internal.com/Yapo/podium-podlet-adview-legacy)| desktop 50%, mobile 50%| in progress...
-Listing |  [Layout](https://github.mpi-internal.com/Yapo/podium-layout-listing), [Podlet legacy](https://github.mpi-internal.com/Yapo/podium-podlet-listing-legacy) | desktop 10%, mobile 10% | in progress...
+Adview     | [Layout](https://github.mpi-internal.com/Yapo/podium-layout-adview), [Podlet legacy](https://github.mpi-internal.com/Yapo/podium-podlet-adview-legacy)| desktop 75%, mobile 75%| in progress...
+Listing |  [Layout](https://github.mpi-internal.com/Yapo/podium-layout-listing), [Podlet legacy](https://github.mpi-internal.com/Yapo/podium-podlet-listing-legacy) | desktop 100%, mobile 100% | success
 Dashboard |    |    | pending
 
-## Next Steps
-To complete the transition from blocket to podium, we need a seed project that will allow us to build microfrontend easier and faster, so we are now building it, first as a client-side project, and after as a server-side, why? we have now a similar project [altiro-seed](https://github.mpi-internal.com/Yapo/altiro-seed) designed for create [microsites](/yapo/frontend-docs/stack/microsites), and it should be easier to adapt.
+We also created two seed repositories which will allow us to create layout and podlet quickly:
 
-first approach (in progress): [https://github.mpi-internal.com/Yapo/podium-podlet-header](https://github.mpi-internal.com/Yapo/podium-podlet-header)
+* https://github.mpi-internal.com/Yapo/fe-page-seed
+* https://github.mpi-internal.com/Yapo/fe-section-seed (Nuxtjs + Podium-lib)
+
+we already have podlet and layouts in production, this can be seen in the vehicle valuation project https://www.yapo.cl/motores, and soon in the dashboard pack https://www.yapo.cl/dashboard-pack.
+
+## Next Steps
+[Done]~~To complete the transition from blocket to podium, we need a seed project that will allow us to build microfrontend easier and faster, so we are now building it, first as a client-side project, and after as a server-side, why? we have now a similar project [altiro-seed](https://github.mpi-internal.com/Yapo/altiro-seed) designed for create [microsites](/yapo/frontend-docs/stack/microsites), and it should be easier to adapt.~~
+
+first approach (Done): [https://github.mpi-internal.com/Yapo/fe-section-header](https://github.mpi-internal.com/Yapo/fe-section-header)
