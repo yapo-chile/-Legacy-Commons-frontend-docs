@@ -15,7 +15,6 @@ Mi hijo es mi corazón y cubre mi alma de amor <3
 
 Mis series favoritas son Breaking Bad, Mr.Robot, Peaky Blinders, Mindhunter, True Detective, Hunter X Hunter, Naruto Shippuden, Bleach. Mis películas favoritas son La vita è bella, BreaveHeart, Dance with Wolves y todas las películas de Studio Ghibli, la mejor película Howl's Moving Castle (Howl no Ugoku Shiro). Me gusta mucho el escritor Haruki Murakami y uno de sus mejores libros es 'Una crónica del pájaro que da cuerda al mundo'.
 
-## Renato Hormazábal
 
 ## Fabián Urbina
 
@@ -30,3 +29,17 @@ Ingeniero en informática especializado en desarrollo de software orientado a te
 ## Nicolás Fredes
 
 Me gusta que me llamen Nico, soy ingeniero de software con experiencia tanto en frontend como en backend. Tengo diez años de experiencia como Desarrollador enfocado principalmente en sistemas web y me gusta todo lo relacionado con MicroServicios, API, Desarrollo Web Basado en Componentes, Código Limpio, SOLID. Tengo experiencia con Laravel y Node, VueJS y ReactJS. En Yapo me desempeño como desarrollador Frontend desde octubre de 2020. Miscelaneas sobre mí: Me gustan los deportes (basquetball y fútbol principalmente, running y trail running también), tengo un perro llamado Tobi, estoy casado y tengo un hijo de diez años . Soy coleccionista de autos Diecast (mayormente Hotwheels) y Fotógrafo aficionado, disfruto escuchar música (Black Music principalmente), ver series y películas en Netflix, mi comida favorita es el bistec con arroz.
+
+# Deprecated
+
+## ~~Renato Hormazabal~~ ☠️
+
+Comencé a trabajar en Yapo en Noviembre del 2017 como desarrollador frontend, luego el 2019 tomé el desafío de liderar un hermoso equipo ❤️, me gusta en general la música, tocar guitarra, el cine, la cocina (sobre todo la cocina), en mis tiempos libres me dedico a leer, hacer pan, estudiar o simplemente dormir.
+
+Películas favoritas: Inception, Shutter Island, Tenet.
+Series Favoritas: The Office, 
+Malcolm in the Middle, Friends.
+Animés Favoritos: Dragon Ball, Slam Dunk, Daemon Slayer, Attack on Tittan.
+Libro Favorito: The Martian.
+
+  Fue una maravillosa experiencia trabajar con ustedes, de verdad me hicieron la pega muy fácil, son excelentes profesionales, sigan haciendo lo que hacen al día de hoy, pórtense bien, me llevo cada cana que me regalaron con mucho cariño, así que nos veremos próximamente en algún lugar del mundo.
